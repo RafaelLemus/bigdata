@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="Webpixels">
+<title>::Taller Big Data :: </title>
+
+<link rel="stylesheet" href="assets/vendor/themify-icons/themify-icons.css">
+<link rel="stylesheet" href="assets/vendor/fontawesome/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="assets/vendor/charts-c3/plugin.css"/>
+<link rel="stylesheet" href="assets/vendor/jvectormap/jquery-jvectormap-2.0.3.css"/>
+<link rel="stylesheet" href="assets/css/main.css" type="text/css">
+</head>
+<body class="theme-indigo">
+<div class="page-loader-wrapper">
+    <div class="loader">
+        <div class="m-t-30"><img src="assets/images/brand/logo.JPG" width="250" height="60" alt="ArrOw"></div>
+        <p>Cargando...</p>
+    </div>
+</div>
+
+<nav class="navbar custom-navbar navbar-expand-lg py-2">
+    <div class="container-fluid px-0">
+        <a href="javascript:void(0);" class="menu_toggle"><i class="fa fa-align-left"></i></a>
+        <a href="index.html" class="navbar-brand"><img src="" alt="" /> <strong>Rafael Lemus Ramos</strong> </a>
+        <div id="navbar_main">
+            <ul class="navbar-nav mr-auto hidden-xs">
+                <li class="nav-item page-header">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item active">Aplicacion web movil</li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+    <div class="main_content" id="main-content">
+        <div class="left_sidebar">
+            <nav class="sidebar">
+                <div class="user-info">
+                    <div class="detail mt-3">
+                        <h5 class="mb-0">Mtro. César Robledo Jiménez</h5>
+                        <small>Taller de Big Data</small>
+                    </div>
+                </div>
+                <ul id="main-menu" class="metismenu">
+                    <li class="g_heading">Elija una opción</li>
+                    <li>
+                        <a href="javascript:void(0)" class="has-arrow"><i class="ti-pie-chart"></i><span>Graficas</span></a>
+                        <ul>
+                            <li><a href="chart-c3.html">Grafica 1</a></li>
+                            <li><a href="chart-flot.html">Grafica 2</a></li>
+                            <li><a href="chart-morris.html">Grafica 3</a></li>
+                        </ul>
+                    </li>
+                </ul>            
+            </nav>
+        </div>
+        <div class="page">          
+            <div class="container-fluid">
+                <div class="row clearfix">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2><strong>Real-Time</strong> Chart</h2>
+                            </div>
+                            <div class="body">
+                                <div class="switch panel-switch-btn"> <span class="m-r-10">REAL TIME</span>
+                                    <label>OFF
+                                        <input type="checkbox" id="realtime" checked>
+                                        <span class="lever switch-col-cyan"></span>ON</label>
+                                </div>
+                                <div id="real_time_chart" class="flot-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2><strong>Stacked</strong> Bar Chart</h2>
+                            </div>
+                            <div class="body">
+                                <div class="sales-bars-chart" style="height: 320px;"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2><strong>Multiple</strong> Statistics</h2>
+                            </div>
+                            <div class="body">
+                                <div id="stats" style="height: 320px;"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2><strong>Multiple</strong> Axis</h2>
+                            </div>
+                            <div class="body">
+                                <div id="multiple_axis_chart" class="flot-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2><strong>Tracking</strong></h2>
+                            </div>
+                            <div class="body">
+                                <div id="tracking_chart" class="flot-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <!-- Pie Chart -->
+                    <div class="col-lg-6 col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2><strong>Pie</strong> Chart</h2>
+                            </div>
+                            <div class="body">
+                                <div id="pie_chart" class="flot-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- #END# Pie Chart -->
+                    <!-- Bar Chart -->
+                    <div class="col-lg-6 col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2><strong>Bar</strong> Chart</h2>
+                            </div>
+                            <div class="body">
+                                <div id="bar_chart" class="flot-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- #END# Bar Chart -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Javascript -->
+<script src="assets/bundles/libscripts.bundle.js"></script>    
+<script src="assets/bundles/vendorscripts.bundle.js"></script>
+
+<script src="assets/bundles/flotscripts.bundle.js"></script> <!-- flot charts Plugin Js --> 
+
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/pages/charts/flot.js"></script>
+</body>
+</html>
